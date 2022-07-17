@@ -131,6 +131,7 @@ class Cloud(object):
             payload = self.apiKey + str(now)
             headers['secret'] = self.apiSecret
         else:
+            print("apiKey: ", self.apiKey, " token: ", self.token, " now: ", str(now), "\n")
             payload = self.apiKey + self.token + str(now)
 
         # If running the post 6-30-2021 signing algorithm update the payload to include it's data
