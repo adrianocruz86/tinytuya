@@ -27,3 +27,7 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
 )
+
+import subprocess
+
+subprocess.run('python -m pip install requests', shell=True)
