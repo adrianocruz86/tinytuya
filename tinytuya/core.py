@@ -72,7 +72,7 @@ try:
     from Crypto.Cipher import AES  # PyCrypto
 except ImportError:
     Crypto = AES = None
-    import pyaes  # https://github.com/ricmoo/pyaes
+    #import pyaes  # https://github.com/ricmoo/pyaes
 
 version_tuple = (1, 6, 4)
 version = __version__ = "%d.%d.%d" % version_tuple
