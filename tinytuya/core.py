@@ -84,12 +84,13 @@ log = logging.getLogger(__name__)
 
 log.debug("%s version %s", __name__, __version__)
 log.debug("Python %s on %s", sys.version, sys.platform)
-if Crypto is None:
+"""if Crypto is None:
     log.debug("Using pyaes version %r", pyaes.VERSION)
     log.debug("Using pyaes from %r", pyaes.__file__)
 else:
-    log.debug("Using PyCrypto %r", Crypto.version_info)
-    log.debug("Using PyCrypto from %r", Crypto.__file__)
+"""
+log.debug("Using PyCrypto %r", Crypto.version_info)
+log.debug("Using PyCrypto from %r", Crypto.__file__)
 
 # Globals Network Settings
 MAXCOUNT = 15       # How many tries before stopping
