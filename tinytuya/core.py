@@ -59,7 +59,6 @@ import socket
 import struct
 import sys
 import time
-from colorama import init
 
 # Backward compatibility for python2
 try:
@@ -74,9 +73,6 @@ try:
 except ImportError:
     Crypto = AES = None
     import pyaes  # https://github.com/ricmoo/pyaes
-
-# Colorama terminal color capability for all platforms
-init()
 
 version_tuple = (1, 6, 4)
 version = __version__ = "%d.%d.%d" % version_tuple
